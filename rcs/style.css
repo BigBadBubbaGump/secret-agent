@@ -22,6 +22,11 @@ h2 {
   font-size: 1rem;
 }
 
+h3 {
+  font-size: 1rem;
+  color: black;
+}
+
 
 .masthead-container {
   display: flex;
@@ -146,5 +151,41 @@ overflow: hidden;
  width: 9rem;
  margin: auto;
 
+ }
+
+.contact-container-960px {
+  display: flex;
+  width:960px;
+  margin: 3rem auto;
+  justify-content: space-between;
+}
+
+ .location-container {
+   width: 35%;
+   height:auto;
+ }
+
+ .location-container h2{
+   background-color: black;
+   width: 100%;
+   padding-top: 1rem;
+   padding-left: 2rem;
+   padding-bottom: 1rem;
+ }
+
+ .foot-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width:100%;
+   height:5rem;
+   background-color: black;
+   margin: auto;
+
+ }
+
+ .copyright-container-960px {
+   width:960px;
+   text-align: left;
 
  }
