@@ -101,8 +101,22 @@ overflow: hidden;
   z-index: 10;
 }
 
+.menu-under-960px {
+  visibility: hidden;
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 2.5rem;
+  background-color: firebrick;
+  margin-top: 0px;
+}
+
 .menu-960px {
   display:flex;
+  position: relative;
+
   justify-content: center;
   align-items: center;
   width:100%;
@@ -187,5 +201,164 @@ overflow: hidden;
  .copyright-container-960px {
    width:960px;
    text-align: left;
+ }
+
+
+ @media only screen and  (min-width:480px) and (max-width:960px) {
+
+   .product-img-container {
+     width: 47%;
+
+   }
+
+   .location-container {
+     width: 35%;
+     height:auto;
+     margin-bottom: 0.5rem;
+   }
+
+   .menu-960px {
+     visibility: hidden;
+     position:absolute;
+
+   }
+
+   .menu-under-960px {
+     visibility: visible;
+   }
+
+
+   .product-3 {
+     visibility: hidden;
+     position:absolute;
+
+   }
+
+   .copyright-container-960px,
+   .container-mast-960px{
+     display: flex;
+     width: 100%;
+     justify-content: flex-start;
+   }
+
+.contact-container-960px,
+.product-container-960px {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
  }
+
+
+ @media only screen and (max-width:480px) {
+
+   .product-img-container {
+     width: 90%;
+   }
+
+   .location-container {
+     width: 90%;
+     height:auto;
+   }
+
+   .menu-960px {
+     visibility: hidden;
+     position: absolute;
+   }
+
+   .menu-under-960px {
+     visibility: visible;
+     position: relative;
+   }
+
+.product-1 {
+  visibility: visible;
+  position:
+}
+   .product-2 {
+     visibility: hidden;
+     position: absolute;
+
+
+   }
+   .product-3 {
+     visibility: hidden;
+  position: absolute;
+
+
+
+   }
+
+   .copyright-container-960px,
+   .container-mast-960px{
+     display: flex;
+     width: 100%;
+     justify-content: center;
+   }
+
+  .product-container-960px {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  }
+
+.contact-container-960px {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+  .copyright-container-960px {
+    width:100%;
+    text-align: center;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: .77rem;
+    color: black;
+
+  }
+
+  a {
+    text-decoration: none;
+    font-size: .77rem;
+    color: white;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: .77rem;
+  }
+
+  .moto-container h2 {
+    display: block;
+    width: 100%;
+    background-color: black;
+    padding: 1rem auto 0.25rem 2rem;
+
+    }
+
+  .moto-container h1 {
+    display: block;
+    width: 100%;
+    background-color: black;
+    padding: 0rem auto 2rem 3rem;
+  }
+
+  .moto-container {
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+  width: 100%;
+  height: 15rem;
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  }
